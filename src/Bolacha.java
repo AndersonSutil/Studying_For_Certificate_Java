@@ -31,9 +31,9 @@ public class Bolacha {
 
             for (int i = 1; i <= 52; i++)
                 {
-                    System.out.printf("%-19s", novoBaralho.cartadeAcordo());
+                    System.out.printf("%-20s", novoBaralho.cartadeAcordo());
 
-                    if (i % 4 == 0)
+                    if (i % 3 == 0)
                         System.out.println();
                 }
         }
