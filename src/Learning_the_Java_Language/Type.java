@@ -1,7 +1,6 @@
 package Learning_the_Java_Language;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
+
 import java.util.Scanner;
 
 public class Type
@@ -19,9 +18,13 @@ public class Type
          System.out.println(sc.next());
          System.out.println(sc.next());
          System.out.println(sc.next());
-         System.out.println(sc.next());
+         System.out.println(sc.nextLine());//<-- puxa a proxima linha assim ignorando o Delimiter
+         System.out.println(sc.locale());//<-- puxa a localidade do scanner
+         sc.reset(); //<-- reset no sacanner
+         System.out.println("\nApartir do reset\n");
+         sc = new Scanner(input);
+         System.out.println(sc.nextLine());
          sc.close(); //<-- close fecha o Scanner sc
-
 
 
     }
