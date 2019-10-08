@@ -1,5 +1,6 @@
 package Learning_the_Java_Language;
 
+
 class VariavelStatica {
     static int id = 1;  // <--  variáveis estáticas podem ser acessadas através de qualquer escopo
 
@@ -28,29 +29,26 @@ class VariavelStatica {
 }
 
 public class EscopoDeVariaveis {
-    String nome1;  // <-- Variavel de istancia, Atributo
-
     public void m1() {
         int x = 10;
         if (x >= 10) {
-            int y = 50;      // <-- variavel local, só pode ser acessado dentro do bloco {}
+            int y = 50;      // <-- variavel só pode ser acessado dentro do bloco {}
             System.out.println(y);
         }
         System.out.println(x);
     }
 
+
     public void m2(String nome) { // <-- variavel local, passsando o parametro nome
-        System.out.println(nome);
+
+
     }
 
 
     public static void main(String[] args) {
         EscopoDeVariaveis esvar = new EscopoDeVariaveis();
-
-        VariavelStatica varsta = new VariavelStatica();
-
-
         esvar.m1();
+
         esvar.m2("Anderson");
         esvar.nome1 = "Sutil";
         System.out.println(esvar.nome1);
@@ -62,6 +60,7 @@ public class EscopoDeVariaveis {
         varsta.setY(12);  // <-- setando valores
         varsta.setId(12); // <-- print da força dos valores
         varsta.ImprimeValores(); //<-- imprimindo valores setados
+
 
 
     }
