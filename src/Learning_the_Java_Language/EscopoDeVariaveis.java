@@ -6,10 +6,19 @@ class VariavelStatica{
 
     public static void setId(int id){  // <-- shadowing
         VariavelStatica.id = id; // <-- forçando a acessar a variavel de classe
+        id = 50;
+        System.out.println(id);
     }
     int y = 0;
     public void setY(int y){        // <-- shadowing
-        this.y = y;     // <-- forçando acessar o variavel de instância
+        this.y = y;
+        y = 20;
+        System.out.println(y);
+        // <-- forçando acessar o variavel de instância
+    }
+    public void ImprimeValores(){
+        System.out.println(y);
+        System.out.println(id);
     }
 
 
@@ -45,6 +54,12 @@ public class EscopoDeVariaveis {
 
         System.out.println(varsta.id); // <-- acessando via referencia de instancia
         System.out.println(VariavelStatica.id);
+
+        varsta.setY(12);  // <-- setando valores
+        varsta.setId(12); // <-- print da força dos valores
+        varsta.ImprimeValores(); //<-- imprimindo valores setados
+
+
 
     }
 }
