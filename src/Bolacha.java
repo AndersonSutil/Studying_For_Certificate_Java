@@ -33,7 +33,7 @@ public class Bolacha {
                 {
                     System.out.printf("%-19s", novoBaralho.cartadeAcordo());
 
-                    if (i % 4 == 0)
+                    if (i % 4 == 0) //<-- if responsavel pelo numero de colunas
                         System.out.println();
                 }
         }
