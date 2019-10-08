@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/jav.iml" filepath="$PROJECT_DIR$/jav.iml" />
-=======
+
+
       <module fileurl="file://$PROJECT_DIR$/.idea/jav.iml" filepath="$PROJECT_DIR$/.idea/jav.iml" />
->>>>>>> master
     </modules>
   </component>
 </project>
