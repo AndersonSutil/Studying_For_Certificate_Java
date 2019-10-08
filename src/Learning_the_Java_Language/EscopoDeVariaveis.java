@@ -1,22 +1,25 @@
 package Learning_the_Java_Language;
 
-class VariavelStatica{
-    static int id = 1 ;  // <--  variáveis estáticas podem ser acessadas através de qualquer escopo
+class VariavelStatica {
+    static int id = 1;  // <--  variáveis estáticas podem ser acessadas através de qualquer escopo
 
 
-    public static void setId(int id){  // <-- shadowing
+    public static void setId(int id) {  // <-- shadowing
         VariavelStatica.id = id; // <-- forçando a acessar a variavel de classe
         id = 50;
         System.out.println(id);
     }
+
     int y = 0;
-    public void setY(int y){        // <-- shadowing
+
+    public void setY(int y) {        // <-- shadowing
         this.y = y;
         y = 20;
         System.out.println(y);
         // <-- forçando acessar o variavel de instância
     }
-    public void ImprimeValores(){
+
+    public void ImprimeValores() {
         System.out.println(y);
         System.out.println(id);
     }
@@ -35,7 +38,8 @@ public class EscopoDeVariaveis {
         }
         System.out.println(x);
     }
-    public void m2(String nome){ // <-- variavel local, passsando o parametro nome
+
+    public void m2(String nome) { // <-- variavel local, passsando o parametro nome
         System.out.println(nome);
     }
 
@@ -58,7 +62,6 @@ public class EscopoDeVariaveis {
         varsta.setY(12);  // <-- setando valores
         varsta.setId(12); // <-- print da força dos valores
         varsta.ImprimeValores(); //<-- imprimindo valores setados
-
 
 
     }
